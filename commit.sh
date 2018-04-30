@@ -3,7 +3,7 @@ FOO=$(cat ./begin)
 BAR=$(printf "%.0f" $FOO)
 echo $FOO
 echo $BAR
-BEGIN=$(expr $BAR + 86400)# init: 972576000
+BEGIN=$(expr $BAR + 86400)
 echo $BEGIN
 END=$(date '+%s')
 echo $END
