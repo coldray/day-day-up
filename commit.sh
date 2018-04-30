@@ -17,16 +17,18 @@ after=''
 
 for i in $list
 do
-    date '+%Y-%m-%d %H:%M:%S: Nothing' >> ./README.md
-    echo >> ./README.md
-
-    echo $i > ./begin
-
-    git add ./README.md
-    git add ./begin
-    git commit  --message='add'
-
-    after='git push origin HEAD'
+    echo i
 done
+
+date '+%Y-%m-%d %H:%M:%S: Nothing' >> ./README.md
+echo >> ./README.md
+
+echo $i > ./begin
+
+git add ./README.md
+git add ./begin
+git commit  --message='add'
+
+after='git push origin HEAD'
 
 eval $after
