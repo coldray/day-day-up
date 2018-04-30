@@ -17,7 +17,7 @@ after=''
 
 for i in $list
 do
-    echo i
+    echo $i
 done
 
 date '+%Y-%m-%d %H:%M:%S: Nothing' >> ./README.md
